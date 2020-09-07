@@ -1,0 +1,7 @@
+- name: 相当于if语句
+  file:
+    dest: {}
+    state: directory
+  when: multi_user == "true"
+  tags:
+    - deploy

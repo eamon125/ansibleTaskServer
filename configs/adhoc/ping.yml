@@ -1,0 +1,3 @@
+- name: Ping 主机
+  ping:
+    data: crash | pong

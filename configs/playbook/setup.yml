@@ -1,0 +1,6 @@
+- name: 收集远程主机系统信息
+  setup:
+    gather_subset:
+      - '!all'
+      - '!any'
+      - facter

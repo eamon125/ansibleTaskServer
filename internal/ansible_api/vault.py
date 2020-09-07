@@ -1,0 +1,87 @@
+# -*- coding:utf-8 -*-
+#
+# Copyright (C) 2017, Tomohiro NAKAMURA <quickness.net@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+import ansible
+import yaml
+try:
+    from ansible.parsing.vault import VaultLib
+except ImportError:
+    # Ansible<2.0
+    from ansible.utils.vault import VaultLib
+from pyDes import des, CBC, PAD_PKCS5
+from configs import settings
+
+_ansible_ver = float('.'.join(ansible.__version__.split('.')[:2]))
+
+
+class Vault(object):
+    '''R/W an ansible-vault yaml file'''
+
+    def __init__(self, password):
+        self._ansible_ver = _ansible_ver
+
+        self.secret = password.encode('utf-8')
+        self.vault = VaultLib(self._make_secrets(self.secret))
+
+    def _make_secrets(self, secret):
+        if self._ansible_ver < 2.4:
+            return secret
+
+        from ansible.constants import DEFAULT_VAULT_ID_MATCH
+        from ansible.parsing.vault import VaultSecret
+        return [(DEFAULT_VAULT_ID_MATCH, VaultSecret(secret))]
+
+    def load_raw(self, stream):
+        """Read vault stream and return raw data."""
+        return self.vault.decrypt(stream)
+
+    def dump_raw(self, text, stream=None):
+        """Encrypt raw data and write to stream."""
+        encrypted = self.vault.encrypt(text).decode('utf-8')
+        if stream:
+            stream.write(encrypted)
+        else:
+            return encrypted
+
+    def load(self, stream):
+        """Read vault steam and return python object."""
+        return yaml.safe_load(self.load_raw(stream))
+
+    def get_stream(self, stream):
+        return self.load_raw(stream)
+
+    def dump(self, data, stream=None):
+        """Encrypt data and print stdout or write to stream."""
+        yaml_text = yaml.dump(
+            data,
+            default_flow_style=False,
+            allow_unicode=True)
+        return self.dump_raw(yaml_text, stream=stream)
+
+    def dumps(self, data, stream):
+        """Encrypt raw data and write to stream."""
+        encrypted = self.vault.encrypt(data).decode('utf-8')
+        if stream:
+            stream.write(encrypted)
+        else:
+            return encrypted
+
+def get_secret(secret_file):
+    k = des("DESCRYPT", CBC, "\0\0\0\0\0\0\0\0", pad=None, padmode=PAD_PKCS5)
+    with open(secret_file, 'rb') as fr:
+        secret = fr.read()
+    return k.decrypt(secret)

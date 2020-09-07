@@ -1,0 +1,38 @@
+- name:
+  shell: 要执行的语句 || {}
+  args:
+    ## 指定执行的目录
+    chdir: 需要cd到的路径 || {}
+
+- name:
+  command: 要执行的语句 || {}
+  args:
+    ## 指定执行的目录
+    chdir: 需要cd到的路径 || {}
+
+# 把安装pexpect rpm步骤加上
+#- name: install flyingdb || 安装一个程序
+#  expect:
+#    command: ./flyingdb-3.1-el6.7-x64-installer-20180227.run || 安装的执行指令
+#    ## 交互式安装流程
+#    responses:
+#      请选择选项: "1\n"
+#      (?i)Installation Directory: "{{ flyingdb_base }}/FlyingDB/3.1\n"
+#      (?i)Is the selection above correct: "Y\n"
+#      (?i)auto startup as a service when OS boot: "Y\n"
+#      (?i)OS user: "{{ flyingdb_user }}\n"
+#      (?i)Change installed files owner and group: "Y\n"
+#      (?i)Please choose an option: "1\n"
+#      (?i)Data directory: "{{ data_directory }}\n"
+#      (?i)Log directory: "{{ log_directory }}\n"
+#      (?i)Port number: "{{ flyingdb_port }}\n"
+#      (?i)Please choose an option \[1: "1\n"
+#      (?i)Please choose an option \[24: "24\n"
+#      (?i)Superuser name: "{{ superuser_name }}\n"
+#      (?i)Password: "{{ flyingdb_password }}\n"
+#      (?i)Re-enter: "{{ flyingdb_password }}\n"
+#      (?i)Accept connections on all addresses, not just localhost: "Y\n"
+#      (?i)Enable Partition Manager\(pg_pathman\): "y\n"
+#      (?i)Enable Redis FDW\(redis_fdw\): "y\n"
+#      (?i)Enable Flying functions: "y\n"
+#      (?i)Do you want to continue\?: "y\n"

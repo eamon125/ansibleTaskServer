@@ -1,0 +1,5 @@
+- name: 解压文件
+  unarchive:
+    src: 源文件（可以是url）
+    dest: 目标地址
+    remote_src: 是否使用远程源文件 | no

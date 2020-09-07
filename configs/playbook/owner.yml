@@ -1,0 +1,6 @@
+- name: 为指定文件设置用户和分组
+  file:
+    dest: 指定文件, 如/opt/test
+    owner: 用户, 如"root" || {}
+    group: 分组, 如"root" || {}
+    state: directory

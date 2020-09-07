@@ -1,0 +1,12 @@
+- name: 安装或升级软件包
+  yum:
+    name: 包名
+    state: 最新(latest)、确保安装(present、installed) | present
+    enablerepo: 指定yum源 | null
+    disablerepo: 禁用yum源 | null
+    download_only: 是否只下载 | no
+
+- name: 卸载软件包
+  yum:
+    name: 包名
+    state: 卸载(absent、removed) | absent

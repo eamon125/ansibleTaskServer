@@ -1,0 +1,6 @@
+- name: shell指令操作
+  shell: shell指令语句
+  args:
+    chdir: 切换到某个目录 | null
+    executable: 执行器 | null
+

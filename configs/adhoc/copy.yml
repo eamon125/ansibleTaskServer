@@ -1,0 +1,10 @@
+- name: 拷贝文件
+  copy:
+    src: 文件源地址
+    dest: 目标源地址
+    owner: 属主 | null
+    group: 属组 | null
+    mode: 权限 | '0644'
+    backup: 是否备份 | no
+    remote_src: 是否远程主机源文件 | no
+

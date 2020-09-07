@@ -1,0 +1,6 @@
+- name: change hostname || 修改主机名
+  hostname:
+    name: 主机名参数 || {}
+  tags:
+    - install
+    - deploy

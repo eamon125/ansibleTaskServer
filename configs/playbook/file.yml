@@ -1,0 +1,23 @@
+- name: 目录操作
+  file:
+    dest: 操作路径参数 || {}
+    state: 操作类型，directory创建目录 absent为删除目录 || {}
+    owner: 所属用户，如root || {}
+    group: 所属分组，如root || {}
+    mode: 权限, 如0644 || {}
+
+- name: 文件操作
+  file:
+    dest: 操作文件路径 || {}
+    state: 操作类型，如 touch创建文件 absent为删除文件 || {}
+    owner: 所属用户，如root || {}
+    group: 所属分组，如root || {}
+    mode: 权限, 如0644 || {}
+
+- name: 软链接
+  file:
+    src: 目标文件，如/testdir/testfile1 || {}
+    dest: 软链接名称，如/testdir/linkfile1 || {}
+    owner: 所属用户，如foo || {}
+    group: 所属分组，如foo || {}
+    state: link

@@ -1,0 +1,18 @@
+- name: Add {} group || 添加一个用户组
+  group:
+    name: 组名参数 || {}
+    state: present
+
+- name: Create user || 创建用户
+  user:
+    name: 用户名参数 || {}
+    shell: /bin/bash
+    group: 组名参数,给用户分配属组 || {}
+    createhome: yes
+    home: /home/用户名参数,用户家目录 || /home/{}
+    state: present
+
+- name: set user password || 设置用户密码
+  shell: 输入用户名参数和密码参数 || echo {} | passwd {} --stdin
+
+##  以上创建密码方式无需给密码加密 直接设置参数即为密码

@@ -1,0 +1,33 @@
+- name: 解压压缩包
+  unarchive:
+    src:  包名参数.tar.gz || {}
+    dest: 安装路径参数 || {}
+    keep_newer: yes
+    owner: 用户名参数 || {}
+    group: 用户组参数 || {}
+  when: multi_user == "false"
+
+## unarchive模块 可以直接解压到指定目录src 不用再删除压缩包
+- name: copy zip & unzip rpm
+  copy:
+    src: "{{ item.rpm }}"
+    dest: /tmp
+  with_items:
+    - { rpm: "zip-3.0-11.el7.x86_64.rpm" }
+    - { rpm: "unzip-6.0-20.el7.x86_64.rpm" }
+
+- name: install zip & unzip
+  shell: rpm -ivh {{ item.rpm }} & echo 0
+  args:
+    chdir: /tmp
+  with_items:
+    - { rpm: "zip-3.0-11.el7.x86_64.rpm" }
+    - { rpm: "unzip-6.0-20.el7.x86_64.rpm" }
+
+- name: delete zip & unzip rpm
+  file:
+    dest: /tmp/{{ item.rpm }}
+    state: absent
+  with_items:
+    - { rpm: "zip-3.0-11.el7.x86_64.rpm" }
+    - { rpm: "unzip-6.0-20.el7.x86_64.rpm" }

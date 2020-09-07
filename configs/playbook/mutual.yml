@@ -1,0 +1,38 @@
+- name: 检查是否已生成ssh密钥文件
+  stat:
+    path: 输入用户名参数 || /home/{}/.ssh/id_rsa
+  register: 设置注册的ssh文件名,如 ssh_file_redis || {}
+  when: multi_user == "false"
+
+## stat模块获取path文件详细信息
+- name: 生成ssh 密钥文件
+  shell: 输入用户名参数 || ssh-keygen -t rsa -f /home/{}/.ssh/id_rsa -N ""
+  args:
+    chdir: 输入用户名参数 || /home/{}
+  when: 输入设置的文件名，如ssh_file_redis || {}.stat.exists == false and multi_user == "false"
+  ignore_errors: yes
+
+- name: 复制互信密钥
+  when: multi_user == "false"
+  fetch:
+    src: 输入用户名参数 || /home/{}/.ssh/id_rsa.pub
+    dest: /tmp/id_rsa.pub
+  tags:
+    - install
+    - deploy
+## fetch模块 将受管主机中的文件拉取到ansible主机
+## src参数指定从受管主机中拉取哪个文件
+## dest参数指定文件本地存放的位置 需要注意权限问题
+
+- name: 配置互信
+  authorized_key:
+    user: 输入用户名参数 || {}
+    state: present
+    key: "{{ lookup('file', '/tmp/id_rsa.pub/{{ hostvars[item].ansible_default_ipv4.address }}/home/用户名参数/.ssh/id_rsa.pub') }}"
+    path: 输入用户名参数 || /home/{}/.ssh/authorized_keys
+    manage_dir: no
+  when: multi_user == "false"
+  with_items: '{{ groups["all"] }}'
+  tags:
+    - install
+    - deploy

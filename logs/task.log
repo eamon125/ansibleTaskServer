@@ -1,0 +1,981 @@
+
+PLAY [Deploy updatepass] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.75.168]
+
+TASK [updatepass : update password] ********************************************
+fatal: [192.168.75.168]: FAILED! => {"msg": "'user_pass_list' is undefined"}
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.75.168]
+
+TASK [updatepass : update password] ********************************************
+changed: [192.168.75.168]
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.75.168]
+
+TASK [updatepass : update password] ********************************************
+changed: [192.168.75.168]
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.75.168]
+
+TASK [updatepass : update password] ********************************************
+changed: [192.168.75.168]
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.75.168]
+
+TASK [updatepass : update password] ********************************************
+changed: [192.168.75.168]
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('xxxxxx', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 17:59:01', '2020-02-03 17:59:01');
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('xxxxxx', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 17:59:03', '2020-02-03 17:59:03');
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 18:15:40', '2020-02-03 18:15:40');
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 18:15:41', '2020-02-03 18:15:41');
+
+PLAY RECAP *********************************************************************
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 18:22:33', '2020-02-03 18:22:33');
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 18:22:35', '2020-02-03 18:22:35');
+
+PLAY RECAP *********************************************************************
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-03 18:22:35', '2020-02-03 18:22:35');
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 18:27:35', '2020-02-03 18:27:35');
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 18:27:37', '2020-02-03 18:27:37');
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-03 18:27:37', '2020-02-03 18:27:37');
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 18:36:07', '2020-02-03 18:36:07');
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 18:36:08', '2020-02-03 18:36:08');
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-03 18:36:08', '2020-02-03 18:36:08');
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 18:45:07', '2020-02-03 18:45:07');
+o.....k
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 18:45:09', '2020-02-03 18:45:09');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-03 18:45:09', '2020-02-03 18:45:09');
+o.....k
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 18:56:45', '2020-02-03 18:56:45');
+o.....k
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 18:56:46', '2020-02-03 18:56:46');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('3', '192.168.75.168', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-03 18:56:47', '2020-02-03 18:56:47');
+o.....k
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HwWxMfV3CQvZX4B1asO6', '192.168.75.168', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-03 19:41:35', '2020-02-03 19:41:35');
+o.....k
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HwWxMfV3CQvZX4B1asO6', '192.168.75.168', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-03 19:41:36', '2020-02-03 19:41:36');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.169 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('HwWxMfV3CQvZX4B1asO6', '192.168.75.168', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-03 19:41:36', '2020-02-03 19:41:36');
+o.....k
+192.168.75.168             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('asc5QJTC6SkaMaWepes1', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-04 15:43:39', '2020-02-04 15:43:39');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('asc5QJTC6SkaMaWepes1', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-04 15:43:41', '2020-02-04 15:43:41');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('asc5QJTC6SkaMaWepes1', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-04 15:43:41', '2020-02-04 15:43:41');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('zy9Y1GXfLNLXrx9dkugC', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-04 15:44:24', '2020-02-04 15:44:24');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('zy9Y1GXfLNLXrx9dkugC', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-04 15:44:25', '2020-02-04 15:44:25');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('zy9Y1GXfLNLXrx9dkugC', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-04 15:44:25', '2020-02-04 15:44:25');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('1FPGsVULbkXTtDN3aWqn', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-04 15:45:24', '2020-02-04 15:45:24');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('1FPGsVULbkXTtDN3aWqn', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-04 15:45:25', '2020-02-04 15:45:25');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('1FPGsVULbkXTtDN3aWqn', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-04 15:45:25', '2020-02-04 15:45:25');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('dc6j8XkHiyZw4vKKeuxw', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-04 15:46:25', '2020-02-04 15:46:25');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('dc6j8XkHiyZw4vKKeuxw', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-04 15:46:26', '2020-02-04 15:46:26');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('dc6j8XkHiyZw4vKKeuxw', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-04 15:46:26', '2020-02-04 15:46:26');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('JwLlRUQkskY88CLBG0io', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-04 17:33:35', '2020-02-04 17:33:35');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('JwLlRUQkskY88CLBG0io', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-04 17:33:36', '2020-02-04 17:33:36');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('JwLlRUQkskY88CLBG0io', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-04 17:33:36', '2020-02-04 17:33:36');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('OeDiX2BjCPpe5SXejJ1E', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-04 17:57:35', '2020-02-04 17:57:35');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('OeDiX2BjCPpe5SXejJ1E', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-04 17:57:36', '2020-02-04 17:57:36');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('OeDiX2BjCPpe5SXejJ1E', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-04 17:57:36', '2020-02-04 17:57:36');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ysJMsAKAS3buKIRyrfGl', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 17:46:36', '2020-02-05 17:46:36');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ysJMsAKAS3buKIRyrfGl', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 17:46:37', '2020-02-05 17:46:37');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('ysJMsAKAS3buKIRyrfGl', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 17:46:37', '2020-02-05 17:46:37');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('bx6kzJXCtpUhm029Y3jl', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 17:49:36', '2020-02-05 17:49:36');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('bx6kzJXCtpUhm029Y3jl', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 17:49:38', '2020-02-05 17:49:38');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('bx6kzJXCtpUhm029Y3jl', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 17:49:38', '2020-02-05 17:49:38');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('c63zRebjavAmxpJlpF8C', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 17:49:41', '2020-02-05 17:49:41');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('c63zRebjavAmxpJlpF8C', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 17:49:42', '2020-02-05 17:49:42');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('c63zRebjavAmxpJlpF8C', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 17:49:42', '2020-02-05 17:49:42');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('SEnE1TvfxtlFWsfEZaDE', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 17:52:28', '2020-02-05 17:52:28');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('SEnE1TvfxtlFWsfEZaDE', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 17:52:29', '2020-02-05 17:52:29');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('SEnE1TvfxtlFWsfEZaDE', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 17:52:29', '2020-02-05 17:52:29');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('qwLGAZjNZks3AlWDYAfV', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:02:50', '2020-02-05 18:02:50');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('qwLGAZjNZks3AlWDYAfV', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:02:51', '2020-02-05 18:02:51');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('qwLGAZjNZks3AlWDYAfV', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:02:51', '2020-02-05 18:02:51');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('CIQChrvTJBzRRU0vZnAe', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:26:43', '2020-02-05 18:26:43');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('CIQChrvTJBzRRU0vZnAe', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:26:44', '2020-02-05 18:26:44');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('CIQChrvTJBzRRU0vZnAe', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:26:44', '2020-02-05 18:26:44');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('LUn0yuTVbugdUYZmZZvm', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:32:35', '2020-02-05 18:32:35');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('LUn0yuTVbugdUYZmZZvm', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:32:36', '2020-02-05 18:32:36');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('LUn0yuTVbugdUYZmZZvm', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:32:36', '2020-02-05 18:32:36');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('eLaN5pSavy5K58UrfojE', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:35:26', '2020-02-05 18:35:26');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('eLaN5pSavy5K58UrfojE', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:35:27', '2020-02-05 18:35:27');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('eLaN5pSavy5K58UrfojE', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:35:27', '2020-02-05 18:35:27');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ONA23zynwhCX0iyaP5gh', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:39:26', '2020-02-05 18:39:26');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ONA23zynwhCX0iyaP5gh', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:39:27', '2020-02-05 18:39:27');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('ONA23zynwhCX0iyaP5gh', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:39:27', '2020-02-05 18:39:27');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('Jj4j2MOQapr8dVsjOMWZ', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:41:40', '2020-02-05 18:41:40');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('Jj4j2MOQapr8dVsjOMWZ', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:41:41', '2020-02-05 18:41:41');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('Jj4j2MOQapr8dVsjOMWZ', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:41:41', '2020-02-05 18:41:41');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ObHnttxhJbL82r9IP2ZK', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:42:02', '2020-02-05 18:42:02');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ObHnttxhJbL82r9IP2ZK', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:42:03', '2020-02-05 18:42:03');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('ObHnttxhJbL82r9IP2ZK', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:42:03', '2020-02-05 18:42:03');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('8AaASa5qplOebstg0omH', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:43:40', '2020-02-05 18:43:40');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('8AaASa5qplOebstg0omH', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:43:41', '2020-02-05 18:43:41');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('8AaASa5qplOebstg0omH', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:43:41', '2020-02-05 18:43:41');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('NpPbnx6Q02hXLnF7dsYg', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:44:29', '2020-02-05 18:44:29');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('NpPbnx6Q02hXLnF7dsYg', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:44:30', '2020-02-05 18:44:30');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('NpPbnx6Q02hXLnF7dsYg', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:44:30', '2020-02-05 18:44:30');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('Nc5U7ayihF4otVcO0pd4', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:44:49', '2020-02-05 18:44:49');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('Nc5U7ayihF4otVcO0pd4', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:44:50', '2020-02-05 18:44:50');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('Nc5U7ayihF4otVcO0pd4', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:44:50', '2020-02-05 18:44:50');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('IFve4DFMnurDglfOWTLw', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:45:59', '2020-02-05 18:45:59');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('IFve4DFMnurDglfOWTLw', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:46:00', '2020-02-05 18:46:00');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('IFve4DFMnurDglfOWTLw', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:46:00', '2020-02-05 18:46:00');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('CpZc9BWFvsVYY7dKKLLt', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:46:24', '2020-02-05 18:46:24');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('CpZc9BWFvsVYY7dKKLLt', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:46:25', '2020-02-05 18:46:25');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('CpZc9BWFvsVYY7dKKLLt', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:46:25', '2020-02-05 18:46:25');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('pYaZz05JVJjQQgdAL9uR', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:48:50', '2020-02-05 18:48:50');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('pYaZz05JVJjQQgdAL9uR', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:48:51', '2020-02-05 18:48:51');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('pYaZz05JVJjQQgdAL9uR', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:48:51', '2020-02-05 18:48:51');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('WJLoYt5dX5drSxE4Q0r0', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 18:48:59', '2020-02-05 18:48:59');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('WJLoYt5dX5drSxE4Q0r0', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 18:49:00', '2020-02-05 18:49:00');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('WJLoYt5dX5drSxE4Q0r0', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 18:49:00', '2020-02-05 18:49:00');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ul0ELVmL4gtRC6mtV7bE', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 19:02:09', '2020-02-05 19:02:09');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ul0ELVmL4gtRC6mtV7bE', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 19:09:21', '2020-02-05 19:09:21');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ul0ELVmL4gtRC6mtV7bE', '192.168.75.170', 'Failed', 'non-zero return code', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 19:09:33', '2020-02-05 19:09:33');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ul0ELVmL4gtRC6mtV7bE', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 19:14:05', '2020-02-05 19:14:05');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('ul0ELVmL4gtRC6mtV7bE', '192.168.75.170', 'Finished', '{"ok": 1, "failures": 1, "unreachable": 0, "changed": 0, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 19:14:05', '2020-02-05 19:14:05');
+o.....k
+192.168.75.170             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('ul0ELVmL4gtRC6mtV7bE', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 19:14:05', '2020-02-05 19:14:05');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('S6q3o0kbnXlDSUSpkeow', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 22:32:13', '2020-02-05 22:32:13');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('S6q3o0kbnXlDSUSpkeow', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 22:38:21', '2020-02-05 22:38:21');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('jxH2mMbQ2jKaHCaNdPNu', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 22:32:27', '2020-02-05 22:32:27');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('jxH2mMbQ2jKaHCaNdPNu', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-05 22:38:41', '2020-02-05 22:38:41');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('S6q3o0kbnXlDSUSpkeow', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 22:38:33', '2020-02-05 22:38:33');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('S6q3o0kbnXlDSUSpkeow', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 22:42:14', '2020-02-05 22:42:14');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('S6q3o0kbnXlDSUSpkeow', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 22:42:14', '2020-02-05 22:42:14');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('S6q3o0kbnXlDSUSpkeow', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 22:42:14', '2020-02-05 22:42:14');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('jxH2mMbQ2jKaHCaNdPNu', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 22:38:42', '2020-02-05 22:38:42');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('jxH2mMbQ2jKaHCaNdPNu', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-05 22:42:24', '2020-02-05 22:42:24');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('jxH2mMbQ2jKaHCaNdPNu', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 22:42:25', '2020-02-05 22:42:25');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('jxH2mMbQ2jKaHCaNdPNu', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-05 22:42:25', '2020-02-05 22:42:25');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('YUn10X2oRt6VAfz0AKVw', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 10:45:07', '2020-02-06 10:45:07');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('YUn10X2oRt6VAfz0AKVw', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 10:51:06', '2020-02-06 10:51:06');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('KHVlhXLVYfsfqLt5Jcg0', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 10:46:00', '2020-02-06 10:46:00');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('KHVlhXLVYfsfqLt5Jcg0', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 10:51:26', '2020-02-06 10:51:26');
+o.....k
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ufwgiLEmzXB9W9ZwnQAU', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 10:53:24', '2020-02-06 10:53:24');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ufwgiLEmzXB9W9ZwnQAU', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 10:53:25', '2020-02-06 10:53:25');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('ufwgiLEmzXB9W9ZwnQAU', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 10:53:25', '2020-02-06 10:53:25');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('KHVlhXLVYfsfqLt5Jcg0', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 10:51:27', '2020-02-06 10:51:27');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('KHVlhXLVYfsfqLt5Jcg0', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 10:55:58', '2020-02-06 10:55:58');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('KHVlhXLVYfsfqLt5Jcg0', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 10:55:58', '2020-02-06 10:55:58');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('KHVlhXLVYfsfqLt5Jcg0', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 10:55:58', '2020-02-06 10:55:58');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('YUn10X2oRt6VAfz0AKVw', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 10:51:18', '2020-02-06 10:51:18');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('YUn10X2oRt6VAfz0AKVw', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 10:56:18', '2020-02-06 10:56:18');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('YUn10X2oRt6VAfz0AKVw', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 10:56:18', '2020-02-06 10:56:18');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('YUn10X2oRt6VAfz0AKVw', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 10:56:18', '2020-02-06 10:56:18');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('hFhsBc9MtNS7TeLkWWej', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 10:53:14', '2020-02-06 10:53:14');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('hFhsBc9MtNS7TeLkWWej', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 10:59:04', '2020-02-06 10:59:04');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('hFhsBc9MtNS7TeLkWWej', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 10:59:16', '2020-02-06 10:59:16');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('hFhsBc9MtNS7TeLkWWej', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 11:03:48', '2020-02-06 11:03:48');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('hFhsBc9MtNS7TeLkWWej', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 11:03:48', '2020-02-06 11:03:48');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('hFhsBc9MtNS7TeLkWWej', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 11:03:48', '2020-02-06 11:03:48');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('gkrJJAtBkNuYwqxrx0h7', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 12:30:36', '2020-02-06 12:30:36');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('gkrJJAtBkNuYwqxrx0h7', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 12:30:37', '2020-02-06 12:30:37');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('gkrJJAtBkNuYwqxrx0h7', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 12:30:37', '2020-02-06 12:30:37');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('1kOV9p9SaMFbK89ch3xC', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 12:30:41', '2020-02-06 12:30:41');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('1kOV9p9SaMFbK89ch3xC', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 12:37:42', '2020-02-06 12:37:42');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('1kOV9p9SaMFbK89ch3xC', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 12:37:54', '2020-02-06 12:37:54');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('1kOV9p9SaMFbK89ch3xC', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 12:42:26', '2020-02-06 12:42:26');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('1kOV9p9SaMFbK89ch3xC', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 12:42:26', '2020-02-06 12:42:26');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('1kOV9p9SaMFbK89ch3xC', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 12:42:26', '2020-02-06 12:42:26');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('RhISZbBuSYYv1VtwdrN4', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 13:30:37', '2020-02-06 13:30:37');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('RhISZbBuSYYv1VtwdrN4', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 13:30:38', '2020-02-06 13:30:38');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('RhISZbBuSYYv1VtwdrN4', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 13:30:38', '2020-02-06 13:30:38');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HWVWoeTXCgI9veMLUPdW', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 13:30:37', '2020-02-06 13:30:37');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HWVWoeTXCgI9veMLUPdW', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 13:37:42', '2020-02-06 13:37:42');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HWVWoeTXCgI9veMLUPdW', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 13:37:55', '2020-02-06 13:37:55');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HWVWoeTXCgI9veMLUPdW', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 13:42:26', '2020-02-06 13:42:26');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('HWVWoeTXCgI9veMLUPdW', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 13:42:26', '2020-02-06 13:42:26');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('HWVWoeTXCgI9veMLUPdW', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 13:42:26', '2020-02-06 13:42:26');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Deploy updatepass] *******************************************************
+
+PLAY [Deploy updatepass] *******************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ieXgXxgzfW4pstLTSDEa', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 14:30:37', '2020-02-06 14:30:37');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('ieXgXxgzfW4pstLTSDEa', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 14:30:38', '2020-02-06 14:30:38');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('ieXgXxgzfW4pstLTSDEa', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 14:30:38', '2020-02-06 14:30:38');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HZd9o8NL10HV4Da4wjtF', '192.168.75.170', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 14:30:37', '2020-02-06 14:30:37');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HZd9o8NL10HV4Da4wjtF', '192.168.75.171', 'OK', 'Running success!', 'TASK: Gathering Facts', 'updatepass', '2020-02-06 14:37:47', '2020-02-06 14:37:47');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HZd9o8NL10HV4Da4wjtF', '192.168.75.170', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 14:37:59', '2020-02-06 14:37:59');
+o.....k
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_jobs (jid, host, status, msg, task, service_name, create_time, update_time) VALUES
+                    ('HZd9o8NL10HV4Da4wjtF', '192.168.75.171', 'OK', 'Running success!', 'TASK: updatepass : update password', 'updatepass', '2020-02-06 14:42:31', '2020-02-06 14:42:31');
+o.....k
+
+PLAY RECAP *********************************************************************
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('HZd9o8NL10HV4Da4wjtF', '192.168.75.170', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 14:42:32', '2020-02-06 14:42:32');
+o.....k
+192.168.75.170             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+passmanager passmanager pass2020 192.168.75.171 5432
+INSERT INTO tk_results (jid, host, status, msg, service_name, create_time, update_time) VALUES
+                    ('HZd9o8NL10HV4Da4wjtF', '192.168.75.171', 'Finished', '{"ok": 2, "failures": 0, "unreachable": 0, "changed": 1, "skipped": 0, "rescued": 0, "ignored": 0}', 'updatepass', '2020-02-06 14:42:32', '2020-02-06 14:42:32');
+o.....k
+192.168.75.171             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+/Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: /Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: cannot execute binary file
+/Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: /Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: cannot execute binary file
+/Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: /Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: cannot execute binary file
+/Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: /Users/wym/go/src/TaskServer/packages/miniconda3/bin/python: cannot execute binary file

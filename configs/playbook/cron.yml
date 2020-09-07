@@ -1,0 +1,12 @@
+- name: 创建定时任务
+  cron:
+    name: 输入定时任务名称 || {}
+    minute: 分钟'0' || {}
+    hour: 小时, '5,2' || {}
+    job: 要执行的命令, 如"ls -alh > /dev/null" || {}
+
+# 删除一个定时任务
+- name: 删除定时任务
+  cron:
+    name: 已存在的定时任务名称 || {}
+    state: absent

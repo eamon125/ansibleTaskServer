@@ -1,0 +1,8 @@
+- name: 拷贝文件或目录到目标主机
+  copy:
+    src: 需要copy的文件或目录 || {}
+    dest: 需要拷贝到的目标目录 || {}
+    mode: '0644'
+  tags:
+    - install
+    - deploy

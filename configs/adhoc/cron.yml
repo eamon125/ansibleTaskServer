@@ -1,0 +1,19 @@
+- name: 创建周期任务
+  cron:
+    name: 周期任务名称(注意需要引号括起来)
+    month: 月(注意需要引号括起来) | *
+    weekday: 周(注意需要引号括起来) | *
+    day: 日(注意需要引号括起来) | *
+    hour: 时(注意需要引号括起来) | *
+    minute: 分(注意需要引号括起来) | *
+    special_time: 特殊时间(annually, daily, hourly, monthly, reboot, weekly, yearly) | null
+    user: 用户 | null
+    job: 任务内容(注意需要引号括起来)
+    cron_file: cron文件 | null
+    state: 创建 | present
+
+- name: 移除周期任务
+  cron:
+    name: 移除的周期任务名称
+    cron_file: 周期任务文件 | null
+    state: 移除 | absent

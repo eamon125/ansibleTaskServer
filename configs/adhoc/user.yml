@@ -1,0 +1,19 @@
+- name: 创建用户
+  user:
+    name: 用户名
+    comment: 描述 | null
+    uid: UID | null
+    group: 用户组 | null
+    groups: 多用户组(逗号相隔) | null
+    append: 是否将多用户组追加到用户的分组中 | no
+    generate_ssh_key: 生成ssh-key | no
+    ssh_key_bits: 指定SSH位键创建的数量 | 2048
+    ssh_key_file: SSH key文件地址 | .ssh/id_rsa
+    state: 创建(present) | present
+
+- name: 移除用户
+  user:
+    name: 用户名
+    state: 移除(absent) | absent
+    remove: 是否移除用户管理目录 | no
+

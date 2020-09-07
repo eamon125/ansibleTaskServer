@@ -1,0 +1,5 @@
+- name: 服务管理
+  service:
+    name: 服务名称
+    state: 启动(started)、关闭(stopped)、重启(restarted)、重载(reloaded) | started
+    args: 参数 | null

@@ -1,0 +1,4 @@
+- name: 创建、删除分组
+  group:
+    name: 组名
+    state: 创建(present)、删除(absent) | present

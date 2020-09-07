@@ -1,0 +1,7 @@
+- name: 拷贝模板到目标主机
+  template:
+    src: 模板文件名称 || {}
+    dest: 目标主机路径 || {}
+  tags:
+    - tcpy
+    - config

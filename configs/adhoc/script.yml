@@ -1,0 +1,6 @@
+- name: 将本地脚本在远程主机运行
+  script: 脚本操作（允许传参）
+  args:
+    creates: 当文件不存在才会执行脚本操作 | null
+    removes: 当文件存在才会执行脚本操作 | null
+    executable: 执行器 | null

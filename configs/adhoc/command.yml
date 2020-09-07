@@ -1,0 +1,4 @@
+- name: 简单Linux shell操作 (不支持`|`及`$`)
+  command: 简单shell操作
+  args:
+    chdir: 切换到某个目录 | null

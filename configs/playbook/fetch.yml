@@ -1,0 +1,5 @@
+- name: 拷贝文件到本地
+  fetch:
+    src: 目标文件的路径，如/tmp/somefile || {}
+    dest: 存放文件的目录，/tmp/prefix-{{ inventory_hostname }} || {}
+    flat: 允许覆盖文件, yes 或者 no || {}

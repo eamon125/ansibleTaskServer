@@ -1,0 +1,12 @@
+- name: 执行脚本
+  script: 输入要执行的命令, 如/some/local/script.sh --some-argument 1234 || {}
+
+- name: 条件判断，指定文件不存在时，执行脚本
+  script: 输入要执行的命令, 如/some/local/create_file.sh --some-argument 1234 || {}
+  args:
+    creates: 要判断的文件, /the/created/file.txt || {}
+
+- name: 条件判断，指定文件存在时，执行脚本
+  script: 输入要执行的命令, 如/some/local/remove_file.sh --some-argument 1234 || {}
+  args:
+    removes: 要判断的文件, /the/removed/file.txt || {}

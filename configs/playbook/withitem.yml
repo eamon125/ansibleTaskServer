@@ -1,0 +1,9 @@
+- name:
+  file:
+    dest: 每次获取迭代的值 || "{{ item }}"
+    state: directory
+  with_items:
+    - 要进行循环的目标，列表或字典 || {}
+  tags:
+    - install
+    - deploy
